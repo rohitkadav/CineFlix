@@ -41,7 +41,20 @@ const CardSlider = ({ data, heading, trending, media_type }) => {
           )}
         </div>
 
-       {/*  */}
+        <div className="absolute top-0 w-full h-full hidden md:flex items-center justify-between">
+          <button
+            onClick={handlePrevious}
+            className="text-white rounded-full px-2 bg-red-600 hover:bg-red-700 transition-colors cursor-pointer z-10 scale-[0.7] active:scale-75 -ml-6"
+          >
+            <i class="ri-arrow-left-s-line ri-2x"></i>
+          </button>
+          <button
+            onClick={handleNext}
+            className="text-white rounded-full px-2 bg-red-600 hover:bg-red-700 transition-colors cursor-pointer z-10 scale-[0.7] active:scale-75 -mr-6"
+          >
+            <i class="ri-arrow-right-s-line ri-2x"></i>
+          </button>
+        </div>
       </div>
     </div>
   );
