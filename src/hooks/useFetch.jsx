@@ -16,7 +16,7 @@ const useFetch = (endpoint) => {
     }
   };
 
-  useEffect(() => {
+  useEffect(() =>  {
     fetchData();
   }, [endpoint]);
 
